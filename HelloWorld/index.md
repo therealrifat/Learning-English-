@@ -1,3 +1,3 @@
-```javascript
+```
 let test = "hi"
 ```
