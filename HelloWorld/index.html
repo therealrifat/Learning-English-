@@ -1,14 +1,31 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Markdown Viewer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    <style>
+        body { padding: 20px; font-family: sans-serif; }
+        .markdown-body { max-width: 800px; margin: 0 auto; border: 1px solid #ddd; padding: 30px; border-radius: 8px; }
+        nav { margin-bottom: 20px; text-align: center; }
+        nav a { margin: 0 10px; text-decoration: none; color: blue; font-weight: bold; }
+    </style>
 </head>
+<body class="markdown-body">
 
-<body>
-  
+    <!-- নেভিগেশন মেনু (নতুন ফাইল যোগ করলে এখানে শুধু লিংক বাড়াবেন) -->
+    <nav>
+        <a href="?file=englishbasicword.md">content</a>
+        <a href="?file=word1.md">Vocabulary</a>
+    </nav>
+
+    <div id="view">ফাইল লোড হচ্ছে...</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript" charset="utf-8" src="app.js">
+        
+    </script>
 </body>
-
 </html>
